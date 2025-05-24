@@ -1,5 +1,5 @@
 # pmvhaven-downloader
-a pmvhaven downloader designed for this website: https://pmvhaven.com/
+a chrome extension, and a pmvhaven downloader designed for this website: https://pmvhaven.com/
 
 Have fun!
 
