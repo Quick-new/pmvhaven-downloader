@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "PMV Haven Downloader – Elegant Edition",
+  "version": "0.3",
+  "description": "Adds a sleek download panel to every PMV Haven list page and automates multi-video downloads.",
+  "permissions": ["scripting", "tabs", "downloads"],
+  "host_permissions": ["https://pmvhaven.com/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://pmvhaven.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": { "default_popup": "popup.html" }
+}
